@@ -1,0 +1,19 @@
+#!/bin/bash
+
+### AWS Cloudformation build script for Stockmann's AWS TEST, PROD, BACKUP accounts
+
+### Parameters
+
+AWS_PROJECT
+AWS_ACCOUNT
+AWS_ENVIRONMENT
+AWS_JSON_FILE = $AWS_PROJECT-$AWS_ACCOUNT-$AWS_ENVIRONMENT-stack.json
+
+###
+
+echo AWS_PROJECT = $AWS_PROJECT
+echo AWS_ACCOUNT = $AWS_ACCOUNT
+echo AWS_ENVIRONMENT = $AWS_ENVIRONMENT
+echo AWS_JSON_FILE = $AWS_JSON_FILE
+
+cat $AWS_JSON_FILE
